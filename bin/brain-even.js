@@ -1,6 +1,4 @@
 #!/usr/bin/env node
-import askNameandGreet from '../src/greet.js';
+import check from '../src/games/even.js';
 
-console.log('Welcome to the Brain Games!');
-
-askNameandGreet();
+check();
