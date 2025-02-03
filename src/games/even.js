@@ -1,8 +1,17 @@
+import mainEngine from '../index.js';
+import getRandomNumber from '../random.js';
+
 const isEven = (number) => number % 2 === 0;
 
-const check = (number) => {
-  const result = isEven(number) ? 'yes' : 'no';
-  console.log(result);
+const description = 'Answer "yes" if the number is even, otherwise answer "no"';
+
+const getData = () => {
+  const randomNumber = getRandomNumber(1, 100);
+  const correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
+
+  return [randomNumber, correctAnswer];
 };
 
-export default check;
+const startEven = () => mainEngine(getData, description);
+
+export default startEven;

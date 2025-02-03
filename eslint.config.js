@@ -49,6 +49,7 @@ export default [
         },
       ],
       'linebreak-style': 0,
+      'comma-dangle': 'ignore',
       'import/no-named-as-default': 'off',
       'import/no-named-as-default-member': 'off',
       'no-console': 'off',
