@@ -8,8 +8,8 @@ const mainEngine = (getData, description) => {
   console.log(description);
   const rounCounts = 3;
   for (let i = 0; i < rounCounts; i += 1) {
-    const [randomNumber, correctAnswer] = getData();
-    console.log(`Question: ${randomNumber}`);
+    const [question, correctAnswer] = getData();
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
