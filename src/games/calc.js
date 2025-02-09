@@ -12,7 +12,7 @@ const calculate = (num1, num2, operator) => {
     case '*':
       return num1 * num2;
     default:
-      return null;
+      throw new Error(`Unknown operator: '${operator}'!`);
   }
 };
 
@@ -21,7 +21,6 @@ const getData = () => {
   const num2 = getRandomNumber(1, 50);
   const operators = ['+', '-', '*'];
   const operator = operators[getRandomNumber(0, operators.length - 1)];
-  console.log(operator);
   const question = `${num1} ${operator} ${num2}`;
   const correctAnswer = String(calculate(num1, num2, operator));
   return [question, correctAnswer];
