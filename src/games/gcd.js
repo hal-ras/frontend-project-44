@@ -1,7 +1,7 @@
 import mainEngine from '../index.js';
 import getRandomNumber from '../random.js';
 
-const description = 'Find the greatest divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
 const getGcd = (num1, num2) => {
   if (num2 === 0) {
